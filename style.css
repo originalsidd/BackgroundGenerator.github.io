@@ -20,10 +20,11 @@ body {
 @media only screen and (max-width: 700px) {
     body {
         font-size: 0.5em;
-        padding: 0px;
+        padding: 10px;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
     }
 }
-
 
 h1 {
 	font: 600 3.5em 'Raleway', sans-serif;
@@ -75,6 +76,18 @@ h3 {
 	outline: none;
 }
 
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 10em;
+	height: 2.3em;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
 
 .trans {
 	transition: 0.6s;
