@@ -31,9 +31,7 @@ function setTextColor() {
 		textl[i].classList.toggle("dyn-color");			
 	};
 }
-function check2(i) {
-	return (hexToRgb(i.value).r <= 140 && hexToRgb(i.value).g <= 140 && hexToRgb(i.value).b <= 140);
-}
+let check2 = i => (hexToRgb(i.value).r <= 140 && hexToRgb(i.value).g <= 140 && hexToRgb(i.value).b <= 140);
 
 var a = 0, c = 0, f = 0;
 
@@ -65,7 +63,7 @@ function setRandomColor() {
 }
 
 function setGradient() {
-	body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+	body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
 	css.textContent = body.style.background + ";";
 	setText();
 }
