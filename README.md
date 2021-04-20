@@ -1,5 +1,6 @@
 # BackgroundGenerator.github.io
 BackgroundGenerator.github.io is an online background generator with both random and custom generation options.
+https://originalsidd.github.io/BackgroundGenerator.github.io/
 
 This website is my second mini practice project using javascript and CSS.
 
